@@ -1,0 +1,25 @@
+get:
+      tags:
+        - foo
+      summary: Get a list of foo
+      description: |
+        Get a list of Foo
+      operationId: account
+      parameters:
+        - $ref: ../../components/headers/key.yaml
+        - $ref: ../../components/headers/channel.yaml
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "../../components/schemas/foo/get-foo-response-schema.json"
+              examples:
+                response:
+                  value:
+                    $ref: "../../components/examples/foo/getFooResponse.json"
+        "404":
+          description: Not found
+        "410":
+          description: error

@@ -1,0 +1,4 @@
+name: Channel
+description: Code for Channel
+in: header
+type: string

@@ -1,0 +1,6 @@
+name: Key
+description: API Key
+in: header
+type: string
+format: uuid
+required: true

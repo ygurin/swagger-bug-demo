@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  version: '1'
+  title: ''
+  description: 'Demo of a bug in swagger'
+paths:
+  /api/foo:
+    $ref: 'paths/foo/foo.yaml'
